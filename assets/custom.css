@@ -17,51 +17,15 @@ li {
 	word-wrap: break-word;
 }
 
-br,
-img {
-	user-select: none;
+.embed-container {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	width: fit-content;
 }
-
-.banner img {
-	image-rendering: pixelated;
+.embed-container iframe {
+	flex-shrink: 0;
 }
-
-.banner:hover {
-	border-bottom: none;
-}
-
-a:visited {
-	color: #eb99a1;
-}
-
-a:visited:hover {
-	color: #da4453;
-}
-
-.button {
-	display: inline-block;
-	padding: 12px 25px;
-	font-size: 16px;
-	font-weight: bold;
-	text-decoration: none;
-	color: #ffffff;
-	background-color: #eb99a1;
-	border: none;
-	border-radius: 8px;
-	text-align: center;
-	cursor: pointer;
-	transition: background-color 0.3s, transform 0.2s;
-}
-
-.button:hover {
-	background-color: #eb99a1;
-}
-
-.button:active {
-	transform: scale(0.98);
-}
-
-.button:focus {
-	outline: none;
-	border: 2px solid #d9d8dc;
+.embed-text {
+	white-space: nowrap;
 }
